@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="EC-V2.HTML" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">古典音樂家介紹</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="ecimages/66.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">蕭邦</h1><br>
+      <h5 class="w3-center">鋼琴詩人
+        蕭邦父親是法國人，母親是波蘭人。他自幼喜愛波蘭民族音樂，7歲時就創作了波蘭舞曲，8歲登台演出，不足20歲已出名。蕭邦後半生主要生活在法國，39歲時因病英年早逝，創作了大量鋼琴作品，如4部敘事曲、十餘部波蘭舞曲包括《軍隊》、《英雄》，26首鋼琴前奏曲包括《雨滴》，27首鋼琴練習曲包括《離別》、《革命》，4首詼諧曲、4首即興曲、3首鋼琴奏鳴曲，至少21首夜曲，59首馬祖卡，兩首鋼琴協奏曲、幻想曲、大提琴奏鳴曲和搖籃曲等。蕭邦一生的創作大多是鋼琴曲，世人稱之「鋼琴詩人」。
+                
+        </h5>
+    </div>
+  </div>
+  
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

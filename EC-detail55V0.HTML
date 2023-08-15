@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="EC-V2.HTML" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">古典音樂家介紹</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="ecimages/55.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">貝多芬</h1><br>
+      <h5 class="w3-center">樂聖
+        貝多芬上承古典樂派傳統，下啟浪漫樂派之風格與精神，因而在音樂史上佔有重要的地位。貝多芬雖然經歷聽力下降，仍一直創作音樂，他一生創作了9部交響曲、36首鋼琴奏鳴曲（其中32首帶有編號，1首未完成，編號為WoO. 51）、10部小提琴奏鳴曲、16首弦樂四重奏、1部歌劇及2部彌撒曲等等。這些作品無論是在曲式、和聲以及織體上都有重大創新，影響了音樂發展史，其中32首鋼琴奏鳴曲，第三、五、六、九交響曲和《莊嚴彌撒》是其代表作，尤其聞名。1827年貝多芬因病逝世。在漢字文化圈，貝多芬有「樂聖」之尊稱。        
+        </h5>
+    </div>
+  </div>
+  
+  <hr>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
